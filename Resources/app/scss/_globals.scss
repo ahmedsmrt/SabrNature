@@ -1,0 +1,37 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    // Font-Family: 'Arvo', Serif;
+    Font-Family: 'Lato', Sans-Serif;
+}
+
+
+/* Flexbox Styles */
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items:center;
+    }
+
+}
+

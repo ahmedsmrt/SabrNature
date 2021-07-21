@@ -1,0 +1,59 @@
+.header {
+
+    background-color: whitesmoke;
+    opacity: .70;
+    position: fixed;
+    width: 100vw;
+
+    nav {
+        padding: 18px;
+    }
+
+    &__logo {
+
+        img {
+            width: 55px;
+            height: 70px;
+        }
+
+    }
+
+
+    &__menu { // Mobile Menu
+
+        margin-top: 25px;
+
+
+        > span {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: $forestBlack;
+            
+
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+
+            &:nth-child(1) {
+                width: 18px;
+            }
+
+            &:nth-child(2) {
+                width: 22px;
+            }
+
+            &:nth-child(3) {
+                width: 26px;
+            }
+            
+            &:nth-child(4) {
+                width: 30px;
+            }
+
+        }
+
+
+
+    }
+}
