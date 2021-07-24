@@ -14,6 +14,7 @@ body {
   padding: 0;
   line-height: 1.1;
   Font-Family: 'Lato', Sans-Serif;
+  overflow-x: hidden;
 }
 
 /* Flexbox Styles */
@@ -49,10 +50,12 @@ body {
   position: fixed;
   width: 100vw;
   border-bottom: #0F0F0d 1px solid;
+  overflow-y: hidden;
+  z-index: 8;
 }
 
 .header nav {
-  padding: 18px;
+  padding: 12px;
 }
 
 .header__logo img {
@@ -74,8 +77,9 @@ body {
 }
 
 .header ul li {
-  padding: 5%;
+  padding: 2%;
   margin: 0 5%;
+  
 }
 
 .header ul li a {
@@ -90,6 +94,71 @@ body {
   transition: .25s;
   color: #0F0F0d;
 }
+
+/* Nav Pop Ups */
+
+.header ul li .pop-1 {
+  visibility: hidden;
+  top: 47px;
+  left: 60px;
+  z-index: 1;
+
+}
+
+.header ul li:hover .pop-1 {
+  width: 15%;
+  height: 120%;
+  background-image: url(/Resources/images/Mountain-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  transition: .4s;
+  transform: translateY(-30%);
+  visibility: visible;
+} 
+
+.header ul li .pop-2 {
+  visibility: hidden;
+  top: 50px;
+  left: 172px;
+
+}
+
+.header ul li:hover .pop-2 {
+  width: 42px;
+  height: 43px;
+  background-image: url(/Resources/images/globe.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  transition: .4s;
+  transform: translateY(-30%);
+  visibility: visible;
+} 
+
+
+.header ul li .pop-3 {
+  visibility: hidden;
+  top: 42px;
+  left: 288px;
+
+}
+
+.header ul li:hover .pop-3 {
+  width: 45px;
+  height: 45px;
+  background-image: url(/Resources/images/Yogi.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  transition: .4s;
+  transform: translateY(-30%);
+  visibility: visible;
+} 
+
 
 
 
@@ -137,6 +206,7 @@ body {
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
+  z-index: 3;
 }
 
 .landing #hero-wrap {
@@ -170,6 +240,51 @@ body {
 .landing #hero-wrap a:hover {
   transition: .2s;
   background-color: #325434;
-  color: #E0BB76;
+  color: #c5aa8d;
 }
+
+
+/* About Page */
+
+.about {
+  width: 100vw;
+  height: 72vh;
+  background-color: #f9f5f2;
+  z-index: 0;
+}
+
+#svg_wrap {
+  height: 100%;
+  width: 100%;
+}
+
+
+.text_box {
+  position: absolute;
+  top: 107%;
+  right: 3%;
+  width: 40%;
+  height: 400px;
+  padding: 10px;
+  /* border: 5px solid saddlebrown; */
+  text-align: center;
+}
+
+.about img {
+  position: absolute;
+  top: 107%;
+  left: 8%;
+  width: 38%;
+  height: 38%;
+  border-radius: 5px;
+  border: .5px solid black;
+  box-shadow: -2px 2px 6px 1px #6e896a;
+}
+
+.about img:hover {
+  transition: .25s;
+  border: 1px solid black;
+  box-shadow: -2px 2px 6px 2px #325434;
+}
+
 /*# sourceMappingURL=styles.css.map */
